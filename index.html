@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <main class="game-container">
+      <h1>ETCH-A-SKETCH</h1>
+      <div class="game-div">
+        <div class="color-squares-picker">
+          <div class="color-picker">
+            <p>Pick a color</p>
+            <input type="color" id="color" />
+          </div>
+          <div class="size-picker">
+            <p>Pick the screen's size</p>
+            <input type="text" id="grid-size" placeholder="16" />
+            <button id="submit-grid-size">Submit</button>
+          </div>
+        </div>
+        <div class="game-canvas" id="sketch-canvas"></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

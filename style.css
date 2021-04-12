@@ -1,0 +1,88 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+
+  --background-color: #f5e0b7;
+  --font-color: #59344f;
+  --border-color: #857e7b;
+  --button-background: #426b69;
+  --button-font-color: #d6ba73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Anton", sans-serif;
+}
+
+h1 {
+  letter-spacing: 0.3125rem;
+}
+
+h1,
+p {
+  color: var(--font-color);
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-font-color);
+  border: none;
+  padding: 0.3125rem 0.625rem;
+  margin-left: 0.625rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.game-container {
+  padding: 0.4375rem 0;
+  text-align: center;
+}
+
+.game-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-squares-picker {
+  width: 31.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-squares-picker * {
+  margin-top: 0.3125rem;
+}
+
+.color-picker,
+.size-picker {
+  width: 25rem;
+  text-align: center;
+}
+
+.color-picker input {
+  width: 3.125rem;
+}
+
+.game-canvas {
+  margin-top: 0.9375rem;
+  display: grid;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: 5px solid var(--border-color);
+  border-radius: 0.3125rem;
+  height: 35.9375rem;
+  width: 35.9375rem;
+}
+
+.grid-item {
+  background-color: white;
+  border: 0.03125rem solid var(--border-color);
+}
